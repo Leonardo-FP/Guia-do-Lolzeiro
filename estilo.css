@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+/* FONTES UTILIZADAS */
+@font-face {
+    font-family: 'FonteTitulos';
+    src: url("_fonts/ViceCitySans.otf");
+}
+@font-face {
+    font-family: 'FonteTextos';
+    src: url("_fonts/RenogareSoft-Regular.ttf");
+}
+
+
+body {
+    font-family: 'FonteTitulos', sans-serif;
+    font-size: 14px;
+    background-color: #081a26;
+    color: rgba (0,0,0,1);
+}
+
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    padding: 10px;
+}
+
+/* Configuração de parágrafos */
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+a {
+    color: #1ea5ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header#cabecalho {
+    border-bottom: 1px #000000 solid;
+    height: 200px;
+    background: url("_imagens/logo-lol-certo.jpg") no-repeat 0px 100px;
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteTextos', sans-serif;
+    font-size: 30px;
+    color: #081a26;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'FonteTextos', sans-serif;
+    color: #081a26;
+    font-size: 12pt;
+    padding: 0px;
+    margin-top: -5px;
+}
+
+
+
+/* MENU */
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 250px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #081a26;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color .7s;
+}
+
+nav#menu li:hover {
+    background-color: #ffffff;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #b6a281;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #b6a281;
+}
+
+/* SEMÂNTICA */
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #000000;
+    padding-right: 15px;
+}
+
+article#noticia-principal h2 {
+    font-size: 18pt;
+    color: #b6a281;
+    background-color: #081a26;
+    padding: 5px 0px 5px 0px;
+    margin: 10px -15px 10px -10px;
+    text-align: center;
+}
+
+article#noticia-principal h3 {
+    font-size: 14pt;
+    color: #081a26;
+    background-color: #1ea5ad;
+    padding: 5px 0px 5px 0px;
+    margin: 10px -15px 10px -10px;
+}
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #606060;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba (0, 0, 0, .5);
+}
+
+aside#lateral h1 {
+    font-size: 18pt;
+    color: #b6a281;
+    background-color: #081a26;
+    padding: 5px 0px 5px 0px;
+    margin: 10px -10px 10px -10px;
+    text-align: center;
+}
+
+aside#lateral h2 {
+    font-size: 14pt;
+    color: #081a26;
+    background-color: #1ea5ad;
+    padding: 5px 0px 5px 0px;
+    margin: 10px -10px 10px -10px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #000000;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+/* TABELA 1 */
+table#tabeladrag {
+    border: 2px solid #081a26;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabeladrag td {
+    border: 0px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+table#tabeladrag td.cd {
+    background-color: #081a26;
+    color: #b6a281;
+}
+
+table#tabeladrag caption {
+    color: #081a26;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabeladrag caption span {
+    display: block;
+    float: right;
+    color: #081a26;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+table#tabeladrag td#ce1{
+    background-color: #ef7414;
+}
+
+table#tabeladrag td#ce2{
+    background-color: #ae8126;
+}
+
+table#tabeladrag td#ce3{
+    background-color: #b6d6fa;
+}
+
+table#tabeladrag td#ce4{
+    background-color: #2bf3d7;
+}
+
+
+/* TABELA 2 */
+
+table#tabelaalma {
+    border: 2px solid black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaalma td {
+    border: 0px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+table#tabelaalma td.cd {
+    background-color: #081a26;
+    color: #b6a281;
+}
+
+table#tabelaalma caption {
+    color: #081a26;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaalma caption span {
+    display: block;
+    float: right;
+    color: #081a26;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+table#tabelaalma td#cee1{
+    background-color: #ef7414;
+}
+
+table#tabelaalma td#cee2{
+    background-color: #ae8126;
+}
+
+table#tabelaalma td#cee3{
+    background-color: #b6d6fa;
+}
+
+table#tabelaalma td#cee4{
+    background-color: #2bf3d7;
+}
+
+table#tabelaalma td#cee5{
+    background-color: #cfcfcf;
+}
+
+/* TABELA 3 */
+
+table#tabelamodos {
+    border: 2px solid black;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelamodos td {
+    border: 0px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+table#tabelamodos td.cd {
+    background-color: #081a26;
+    color: #b6a281;
+}
+
+table#tabelamodos caption {
+    color: #081a26;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelamodos caption span {
+    display: block;
+    float: right;
+    color: #081a26;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
