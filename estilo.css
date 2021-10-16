@@ -35,6 +35,12 @@ p {
     text-indent: 50px;
 }
 
+header#cabecalho img#icone {
+    position: absolute;
+    left: 930px;
+    top: 45px;
+}
+
 a {
     color: #1ea5ad;
     text-decoration: none;
