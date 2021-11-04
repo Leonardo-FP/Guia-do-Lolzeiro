@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+img#base {
+    display: block;
+    margin: auto;
+}
+
+img#loja {
+    display: block;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 300px;
+}

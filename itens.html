@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>O básico do LOL</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="itens.css">
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
 
@@ -40,6 +41,36 @@
                 <h2>O básico do LOL > Itens</h2>
             </header>
         </hgroup>
+    </section>
+    <p>Se você entendeu bem a parte de <a href="atributos.html">Atributos</a>, compreender os itens vai ser um tanto mais simples, pois no LOL todos os conceitos estão interligados. Assim, você farma, elimina os inimigos e derruba torres com o objetivo de obter experiência e, principalmente, ouro, que ao voltar para a base será convertido em itens para te tornar ainda mais poderoso.</p>
+    <p>Saber construir uma boa "build" (seleção e compra de itens para o campeão), ou como é mais conhecido pelos jogadores, "buildar", é um grande requisito para se tornar um melhor jogador de LOL. Contudo, atualmente tal processo não é algo tão complicado, pois no início de 2021 a <a href="https://www.riotgames.com/pt-br" target="_blank"> Riot Games</a> introduziu uma nova interface para a loja do jogo, que se tornou muito mais interativa e amigável com os jogadores.</p>
+
+
+
+    <img id="base" onclick="showImg('loja')" src="_imagens/base.jpg" alt="Base no LOL">
+    <img id="loja" onclick="hideImg(this)" src="_imagens/lojaaberta.jpg" alt="Loja do LOL aberta" style="display: none;">
+
+
+
+    <script>
+        function showImg(idTagImg) {
+            let img = document.getElementById(idTagImg);
+            if(img.style.display == 'none'){
+                img.style.display == 'block';
+               return true;
+            }else{
+                return false;
+            }
+         }
+         function hideImg(Img) {
+            img.style.display = 'none';                
+         }
+    </script>
+ 
+
+
+
+
 
 
     <footer id="rodape">
