@@ -50,18 +50,16 @@
             </header>
         </hgroup>
 
-
-
-    <form method="post" id="fContato" action="mailtoleopaulelli@gmail.com" oninput="calc_total();">
+    <form method="get" id="fContato" action="gravarDados.php" oninput="calc_total();">
         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
             <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
             <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Senha"></p>
             <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="40"></p>
             <fieldset id="sexo"><legend>Sexo</legend>
-                <input type="radio" name="tSexo" id="cMasc" checked> <label for="cMasc">Masculino</label><br>
-                <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
+                <input type="radio" value="M" name="tSexo" id="cMasc" checked> <label for="cMasc">Masculino</label><br>
+                <input type="radio" value="F" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
             </fieldset>
-            <p>Data de Nascimento: <input type="date"></p>
+            <p>Data de Nascimento: <input type="date" name="tNasc"></p>
         </fieldset>
         
         <fieldset id="endereco"><legend>Endereço do Usuário</legend>

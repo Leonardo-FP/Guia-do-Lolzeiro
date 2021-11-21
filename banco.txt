@@ -1,0 +1,20 @@
+CREATE DATABASE siteLol;
+
+USE siteLol; 
+
+CREATE TABLE usuario (
+	id 			 INT (11) AUTO_INCREMENT PRIMARY KEY,
+	nome		 VARCHAR(30),
+    senha        VARCHAR(8),
+    email        VARCHAR(40),
+    sexo         CHAR(1),
+	nascimento	 DATE,
+    logradouro   VARCHAR(80),
+    numero       INT(5),
+    estado       CHAR(2),
+    cidade       VARCHAR(40),
+    satisfacao   INT(2),
+    mensagem     TEXT
+);      
+
+    

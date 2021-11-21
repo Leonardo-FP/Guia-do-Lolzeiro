@@ -5,6 +5,10 @@ img#base {
     margin: auto;
 }
 
+h2 {
+    text-align: center;
+}
+
 img#loja {
     display: block;
     position: absolute;
