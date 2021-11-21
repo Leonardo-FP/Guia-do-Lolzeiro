@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="form.css"/>
     <script language="javascript" src="_javascript/funcoes.js"></script>
     <script>
+        <?php
+        if (isset($_GET["cadastrado"])) {
+            echo "alert('cadastrado com sucesso');";
+        }
+        ?>
         function calc_total(){
             var qtd = parseInt(document.getElementById('cQtd').value);
             tot = qtd * 1500;
@@ -37,7 +42,7 @@
         <li onmouseover="mudaFoto ('_imagens/atributos.png')" onmouseout="mudaFoto ('_imagens/ping.png')"><a href="atributos.html">Atributos</a></li>
         <li onmouseover="mudaFoto ('_imagens/itens.png')" onmouseout="mudaFoto ('_imagens/ping.png')"><a href="itens.html">Itens</a></li>
         <li onmouseover="mudaFoto ('_imagens/rotas-no-lol-fundo.png')" onmouseout="mudaFoto ('_imagens/ping.png')"><a href="rotas.html">Guia de Rotas</a></li>
-        <li onmouseover="mudaFoto ('_imagens/ping.png')" onmouseout="mudaFoto ('_imagens/ping.png')"><a href="fale-conosco.html">Fale Conosco</a></li>
+        <li onmouseover="mudaFoto ('_imagens/ping.png')" onmouseout="mudaFoto ('_imagens/ping.png')"><a href="fale-conosco.php">Fale Conosco</a></li>
         </ul>
     </nav>
     </header>
@@ -50,7 +55,7 @@
             </header>
         </hgroup>
 
-    <form method="get" id="fContato" action="gravarDados.php" oninput="calc_total();">
+    <form method="post" id="fContato" action="gravarDados.php" oninput="calc_total();">
         <fieldset id="usuario"><legend>Identificação do Usuário</legend>
             <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
             <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Senha"></p>
